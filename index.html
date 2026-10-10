@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог Boosty Kuzma671</title>
+<meta name="description" content="Каталог фильмов, сериалов и игр из Boosty-блога Kuzma671: постеры, оценки Кинопоиск/IMDb и ссылки на записи.">
+<link rel="stylesheet" href="styles.css?v=11">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1><a href="#/">Каталог Boosty Kuzma671</a></h1>
+    <p>Фильмы, сериалы и игры из <a href="https://boosty.to/kuzma671games" target="_blank" rel="noopener">Boosty</a> — с постерами, оценками и ссылками на записи просмотров. Некаталогизируемые стримы — в отдельной вкладке.</p>
+  </div>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Поиск по названию…" autocomplete="off">
+    <select id="sort" aria-label="Сортировка">
+      <option value="default">Сначала новые записи</option>
+      <option value="year">По году выпуска</option>
+      <option value="title">По названию</option>
+      <option value="rating">По оценке Кинопоиска</option>
+      <option value="imdb">По оценке IMDb</option>
+    </select>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+</header>
+<main>
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty" hidden>Ничего не найдено</div>
+</main>
+<footer class="foot">
+  <span>Обновлено: <span id="gen"></span></span>
+</footer>
+<script src="app.js?v=11"></script>
+</body>
+</html>
